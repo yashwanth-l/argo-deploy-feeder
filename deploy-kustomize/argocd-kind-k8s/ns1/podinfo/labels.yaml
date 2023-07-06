@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: LabelTransformer
+metadata:
+  name: labels
+labels:
+  instance: podinfo-argocd
+fieldSpecs:
+  - path: metadata/labels
+    create: true
